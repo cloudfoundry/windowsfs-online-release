@@ -1,3 +1,4 @@
 [submodule "src/code.cloudfoundry.org/hydrator"]
 	path = src/code.cloudfoundry.org/hydrator
 	url = https://github.com/cloudfoundry/hydrator
+	branch= main
