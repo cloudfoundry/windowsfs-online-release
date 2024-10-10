@@ -1,0 +1,41 @@
+name: windowsfs
+version: 2.73.0
+commit_hash: b01a319
+uncommitted_changes: false
+jobs:
+- name: windows2019fs
+  version: 3814aed47c68534b392f2f235b26d202db9c71450b0630aec322cbb83a85863c
+  fingerprint: 3814aed47c68534b392f2f235b26d202db9c71450b0630aec322cbb83a85863c
+  sha1: sha256:ede57f50f6d8003d9c7c5ec19267a690afb8994af325ea5f07cfefc3f8c98a75
+  packages:
+  - windows2019fs
+  - hydrate
+- name: windows2019fs-smoke-test
+  version: 480420a85190e2b48f721d89de2e8288b16a6a231543860955edf52f65856992
+  fingerprint: 480420a85190e2b48f721d89de2e8288b16a6a231543860955edf52f65856992
+  sha1: sha256:339243f932a8a60a6415f75cdd92629e294be56e4395d9158d4418905438eb77
+  packages:
+  - windows2019fs
+  - hydrate
+packages:
+- name: golang-1.23-windows
+  version: 1ee8c0de290be0363104a7f2cdebf6373f3777189afc13d9ac9a8795d36be7ba
+  fingerprint: 1ee8c0de290be0363104a7f2cdebf6373f3777189afc13d9ac9a8795d36be7ba
+  sha1: sha256:208217826e4b4fddf79d220e0f29ea9bdf72681eff2141282e7eb7892bff4531
+  dependencies: []
+- name: hydrate
+  version: 70a1a46d1a1eab59125ab14434f23e77ae24ae67a092089a05b3f43f3f9fb486
+  fingerprint: 70a1a46d1a1eab59125ab14434f23e77ae24ae67a092089a05b3f43f3f9fb486
+  sha1: sha256:f649ec643d83e43d2fe36013944137054e0affae2b9bea911474887ef24fd000
+  dependencies:
+  - golang-1.23-windows
+- name: windows2019fs
+  version: 599144e779f9c0a5fd3df552452b1506f693a2ffdcfbc4c94dc2814ae22db835
+  fingerprint: 599144e779f9c0a5fd3df552452b1506f693a2ffdcfbc4c94dc2814ae22db835
+  sha1: sha256:28e0c3f8691996828fe0c8de1fae4e84444700a768851bd2cac19a29fda37bce
+  dependencies:
+  - hydrate
+license:
+  version: a3e03417a7267fe116ddf6eb56ce42ec62919749aca4fb1b333127ab4668cc0d
+  fingerprint: a3e03417a7267fe116ddf6eb56ce42ec62919749aca4fb1b333127ab4668cc0d
+  sha1: sha256:0cc4631e40e76645c9c4fff90dedd6df830732bae6007f1db58429966a8a58a6
